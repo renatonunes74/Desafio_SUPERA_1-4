@@ -16,13 +16,15 @@ public class Desafio1 {
 		List<Integer> pares = new ArrayList<>();
 
 		// Verificação da primeira entrada
-		do {
-			System.out.println("Entrada");
+		while(true) {
+			System.out.println("Entrada:");
 			entrada = scanner.nextInt();
-			if (entrada <= 1 || entrada > 100000) {
-				System.out.println("Apenas maiores que 1 e menores que 100.000 mil");
+			if (entrada > 1 && entrada < 100000) {
+				break;
+			} else {
+				System.out.println("Apenas entradas maiores que 1 e menores que 100.000 mil");
 			}
-		} while (entrada <= 1 || entrada > 100000);
+		}
 
 		// Armazenando as próximas entradas na List
 		for (int i = 1; i <= entrada; i++) {
