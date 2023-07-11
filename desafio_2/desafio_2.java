@@ -10,10 +10,10 @@ public class Desafio2 {
 		while (true) {
 			System.out.println("Entrada:");
 			valor = scanner.nextDouble();
-			if (valor > 0 && valor < 1000000.00) {
+			if (valor >= 0 && valor <= 1000000.00) {
 				break;
 			} else {
-				System.out.println("Digite apenas valores mairos que 0 e menores que 1000000.00");
+				System.out.println("Digite apenas entrada maior que 0 e menor que 1000000.00");
 			}
 		}
 
